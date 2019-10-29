@@ -1,0 +1,88 @@
+<!--pages/sopping/sopping.wxml-->
+<!--空购物车展示 Start-->
+<view wx:if="{{isnull==0}}">
+  <view class="title">
+    <image src="../../image/null.png"></image>
+    <view>购物车空空如也，快去逛逛吧~</view>
+    <view>去逛逛</view>
+  </view>
+  <view scroll-y class="center">
+    <view class="center_title">
+      <image src="../../image/hot_Icon.jpg"></image>
+    </view>
+    <view class="center_body">
+      <view class="details">
+        <image src="../../image/img/K12_r2_c2.jpg"></image>
+        <view class="i ell">炫彩款行星贴纸墙贴</view>
+        <view><view>￥260</view><view>￥340</view></view>
+      </view>
+      <view class="details">
+        <image src="../../image/img/K12_r2_c2.jpg"></image>
+        <view class="i ell">炫彩款行星贴纸墙贴</view>
+        <view><view>￥260</view><view>￥340</view></view>
+      </view>
+      <view class="details">
+        <image src="../../image/img/K12_r2_c2.jpg"></image>
+        <view class="i ell">炫彩款行星贴纸墙贴</view>
+        <view><view>￥260</view><view>￥340</view></view>
+      </view>
+      <view class="details">
+        <image src="../../image/img/K12_r2_c2.jpg"></image>
+        <view class="i ell">炫彩款行星贴纸墙贴</view>
+        <view><view>￥260</view><view>￥340</view></view>
+      </view>
+      <view class="details">
+        <image src="../../image/img/K12_r2_c2.jpg"></image>
+        <view class="i ell">炫彩款行星贴纸墙贴</view>
+        <view><view>￥260</view><view>￥340</view></view>
+      </view>
+    </view>
+  </view>
+</view> 
+<!--空购物车展示 End-->
+
+<!--购物车列表-->
+<scroll-view scroll-y class="body" wx:if="{{isnull!=0}}">
+  <view class="edit">编辑</view>
+  <view class="detalis"  wx:for="{{sopping}}" wx:key="{{item.id}}">
+    <image src="../../image/{{item.isGet?'success.png':'success2.png'}}" 
+           data-idx="{{index}}" 
+           data-id="{{item.id}}" 
+           bindtap="GetGoods">
+    </image>
+    <view class="detalis_cneter">
+      <image src="{{item.image}}"></image>
+      <view class="g">
+        <view class="_name ell">{{item.name}}</view>
+        <view class="_title">{{item.title}}</view>
+        <view class="_monery">￥{{item.monery}}</view>
+      </view>
+    </view>
+    <view class="n">
+      <image bindtap="CNumber" data-idx="{{index}}" src="../../image/a.gif"></image>
+      <view>{{item.number}}</view>
+      <image bindtap="ANumber" data-idx="{{index}}" src="../../image/c.gif"></image>
+    </view>
+  </view>
+</scroll-view>
+
+<view class="bottom">
+  <view class="bottom1">
+    <image bindtap="All" src="../../image/{{isAll?'success.png':'success2.png'}}"></image>
+    <view>
+      全选
+    </view>
+  </view>
+  <view class="bottom2">
+    <view>
+      合计
+    </view>
+    <view>
+      <view style="color:#FF4948;">￥{{MoneryNum}}</view>
+      <view>(含运费)</view>
+    </view>
+  </view>
+  <button class="btn" bindtop="_getGoods">
+    结算
+  </button>
+</view>

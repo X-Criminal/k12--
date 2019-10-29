@@ -1,0 +1,153 @@
+<!--pages/class/class.wxml-->
+<view class="query">
+ <view bindtap="navSearch" class="input"><image src="../../image/queryIcon.jpg"></image> 英语闪卡/英语教材/英语环创</view>
+</view>
+<scroll-view scroll-y class="classNav">
+  <view class="classNavs {{ClassId==1?'show':''}}" bindtap="CheckClass" data-id="1"><view>英语环创</view></view>
+  <view class="classNavs {{ClassId==2?'show':''}}" bindtap="CheckClass" data-id="2"><view>英语闪卡</view></view>
+  <view class="classNavs {{ClassId==3?'show':''}}" bindtap="CheckClass" data-id="3"><view>英语手工</view></view>
+  <view class="classNavs {{ClassId==4?'show':''}}" bindtap="CheckClass" data-id="4"><view>英语教材</view></view>
+  <view class="classNavs {{ClassId==5?'show':''}}" bindtap="CheckClass" data-id="5"><view>教辅设备</view></view>
+  <view class="classNavs {{ClassId==6?'show':''}}" bindtap="CheckClass" data-id="6"><view>宣传用品</view></view>
+  <view class="classNavs {{ClassId==7?'show':''}}" bindtap="CheckClass" data-id="7"><view>学院奖励</view></view>
+  <view class="classNavs {{ClassId==8?'show':''}}" bindtap="CheckClass" data-id="8"><view>家长赠品</view></view>
+</scroll-view>
+<scroll-view scroll-y class="classBody">
+  <image class="classBody_title" src="../../image/img/分类页_r2_c2.jpg"></image>
+  <view  class="classBody_data">
+    <view class="Datas">
+      <image bindtap="getDetail" data-id="1" src="../../image/img/K12_r2_c2.jpg"></image>
+      <view class="ell">教育闪卡游戏</view>
+      <view> 
+        <view>
+          ￥99.8
+        </view>
+        <image bindtap="AddSopping" 
+               data-id="1" 
+               data-monery="99.8"
+               data-name="名字"
+               data-title="title"
+               data-image="../../image/img/K12_r2_c2.jpg"
+               class="icon" src="../../image/add.jpg">
+        </image>
+      </view>
+    </view>
+    <view class="Datas">
+      <image bindtap="getDetail" data-id="2" src="../../image/img/K12_r2_c2.jpg"></image>
+      <view class="ell">教育闪卡游戏</view>
+      <view> 
+        <view>
+          ￥10.8
+        </view>
+        <image bindtap="AddSopping" 
+               data-id="2" 
+               data-monery="10.8"
+               data-name="名字"
+               data-title="title"
+               data-image="../../image/img/K12_r2_c2.jpg"
+               class="icon" src="../../image/add.jpg">
+        </image>
+      </view>
+    </view>    <view class="Datas">
+      <image bindtap="getDetail" data-id="3" src="../../image/img/K12_r2_c2.jpg"></image>
+      <view class="ell">教育闪卡游戏</view>
+      <view> 
+        <view>
+          ￥9.8
+        </view>
+        <image bindtap="AddSopping" 
+               data-id="3" 
+               data-monery="9.8"
+               data-title="title"
+               data-name="名字"
+               data-image="../../image/img/K12_r2_c2.jpg"
+               class="icon" src="../../image/add.jpg">
+        </image>
+      </view>
+    </view>    <view class="Datas">
+      <image bindtap="getDetail" data-id="4" src="../../image/img/K12_r2_c2.jpg"></image>
+      <view class="ell">教育闪卡游戏</view>
+      <view> 
+        <view>
+          ￥10.01
+        </view>
+        <image bindtap="AddSopping" 
+               data-id="4" 
+               data-monery="10.01"
+               data-title="title"
+               data-name="名字"
+               data-image="../../image/img/K12_r2_c2.jpg"
+               class="icon" src="../../image/add.jpg">
+        </image>
+      </view>
+    </view>    <view class="Datas">
+      <image bindtap="getDetail" data-id="5" src="../../image/img/K12_r2_c2.jpg"></image>
+      <view class="ell">教育闪卡游戏</view>
+      <view> 
+        <view>
+          ￥7.8
+        </view>
+        <image bindtap="AddSopping" 
+               data-id="5" 
+               data-monery="7.8"
+               data-name="名字"
+               data-title="title"
+               data-image="../../image/img/K12_r2_c2.jpg"
+               class="icon" src="../../image/add.jpg">
+        </image>
+      </view>
+    </view>  
+    <view class="Datas">
+      <image bindtap="getDetail" data-id="6" src="../../image/img/K12_r2_c2.jpg"></image>
+      <view class="ell">教育闪卡游戏</view>
+      <view> 
+        <view>
+          ￥1.01
+        </view>
+        <image bindtap="AddSopping" 
+               data-id="6" 
+               data-monery="1.01"
+               data-name="名字"
+               data-title="title"
+               data-image="../../image/img/K12_r2_c2.jpg"
+               class="icon" src="../../image/add.jpg">
+        </image>
+      </view>
+    </view>    
+  </view>
+</scroll-view>
+
+<cover-view bindtap="_return" class="cover-view" wx:if="{{isSopping}}">
+  <cover-view class="box">
+    <cover-view class="detail">
+      <cover-image src="../../image/img/K12_r2_c2.jpg"></cover-image>
+      <cover-view class="soppingDetaLis">
+        <cover-view>零百K12教育闪卡 字母款套装（26个装字母款套装）</cover-view>
+        <cover-view>快递：免运费</cover-view>
+        <cover-view>￥25.00</cover-view>
+      </cover-view>
+    </cover-view>
+    <cover-view class="detail2">
+      <cover-view class="number">
+        数量
+      </cover-view>
+      <cover-view>
+        <cover-view catchtap="reduce">-</cover-view>
+        <cover-view>{{SoppingNum}}</cover-view>
+        <cover-view catchtap="add">+</cover-view>
+        <cover-view>库存：98</cover-view>
+      </cover-view>
+    </cover-view>
+    <cover-view class="detail3">
+      <button catchtap="_add">加入购物车</button>
+      <button>立即购买</button>
+    </cover-view>
+  </cover-view>
+</cover-view>
+
+<view wx:for="{{Adds}}" 
+      wx:key="{{index}}" 
+      style="left:{{item.left}}px;top:{{item.top}}px;" 
+      class="add"
+      animation="{{Animation[index]}}"
+>+</view>

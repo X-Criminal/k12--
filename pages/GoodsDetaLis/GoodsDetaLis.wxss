@@ -1,0 +1,90 @@
+/* pages/GoodsDetaLis/GoodsDetaLis.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+page > scroll-view{
+  width: 100%;
+  height: calc(100% - 110rpx);
+}
+.page-body{
+  width: 750rpx;
+  height: 740rpx;
+  position: relative;
+}
+.page-body>view{
+  width: 750rpx;
+  height: 740rpx;
+}
+.page-body>view swiper{
+  width: 750rpx;
+  height: 740rpx;
+}
+.page-body>view swiper image{
+  width: 750rpx;
+  height: 740rpx;
+}
+.page-body .page{
+  position: absolute;
+  right: 30rpx;
+  bottom: 30rpx;
+  background-color: #B2B2B2;
+  height: 40rpx;
+  line-height: 40rpx;
+  width: 100rpx;
+  text-align: center;
+  color: white;
+  font-size: 24rpx;
+  border-radius: 20rpx;
+}
+.title{
+  width: 690rpx;
+  margin: 0 auto;
+}
+.title view{
+  display: inline-block;
+  width: calc(100% - 60rpx);
+  font-weight: 600;
+  vertical-align: middle;
+}
+.title image{
+  display: inline-block;
+  width: 49rpx;
+  height: 88rpx;
+  vertical-align: middle;
+}
+.price{
+  width: 690rpx;
+  margin: 0 auto;
+  margin-top: 15rpx;
+  line-height: 63rpx;
+}
+.price view:nth-child(1){
+  height: 63rpx;
+  color: #FE4847;
+  font-weight: 600;
+  font-size: 36rpx;
+  border-bottom: 1px solid #ccc;
+}
+.price view:nth-child(2){
+  color: #888;
+  font-size: 26rpx;
+}
+.appraice{
+  border-top: 30rpx solid #F2F2F2;
+}
+.appraice_title{
+  /* width: 690rpx; */
+  margin: 0 auto;
+  padding:0 30rpx;
+  box-sizing: border-box;
+  font-size: 33rpx;
+  color: #333;
+  line-height: 73rpx;
+  height: 73rpx;
+  border-bottom: 1px solid #EBEBEB;
+}
+.appraice_title >view{
+  float: right;
+  font-size: 23rpx;
+}

@@ -1,0 +1,157 @@
+<!--index.wxml-->
+<view class="back">
+      <view class="d1">
+      </view>
+</view>
+<view class="container">
+  <view class="section section_gap swiper_box">
+      <swiper class="swiper" 
+              circular indicator-dots="{{indicatorDots}}" 
+              vertical="{{vertical}}"
+              autoplay="{{autoplay}}" 
+              interval="{{interval}}"
+              bindanimationfinish="sition"
+              duration="{{duration}}" > 
+        <block wx:for="{{images}}" wx:key="item.id">
+          <swiper-item class="{{detail == index?'show':'none'}}">
+            <image src="{{item}}" bindtap='leveltest' data-id="{{index}}" class="slide-image"/>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+</view>
+<view class="className">
+  <view>
+    <image src="../../image/top.jpg"></image>
+    <view>每日热卖</view>
+  </view>
+  <view>
+    <image src="../../image/hc.jpg"></image>
+    <view>英语环创</view>
+  </view>
+  <view>
+    <image src="../../image/sk.jpg"></image>
+    <view>英语闪卡</view>
+  </view>
+  <view>
+    <image src="../../image/sg.jpg"></image>
+    <view>英语手工</view>
+  </view>
+  <view>
+    <image src="../../image/jc.jpg"></image>
+    <view>英语教材</view>
+  </view>
+  <view>
+    <image src="../../image/fz.jpg"></image>
+    <view>教辅设备</view>
+  </view>
+  <view>
+    <image src="../../image/xc.jpg"></image>
+    <view>宣传用品</view>
+  </view>
+  <view>
+    <image src="../../image/xx.jpg"></image>
+    <view>学员奖励</view>
+  </view>
+</view>
+<view class="hot">
+  <view class="title">
+    <text>精选</text>
+    <text>推荐</text>
+  </view>
+  <view class="HotCenter">
+    零白k12教育商城小程序正式上学啦
+    <image src="../../image/jt.jpg"></image>
+  </view>
+</view>
+<view class="body">
+   <view class="body_hot">
+      <view class="body_hot_title">
+        <image src="../../image/hot_Icon.jpg"></image>
+        <view>
+          <image src="../../image/chec_cion.jpg"></image>
+          <view>换一批</view>
+        </view>
+      </view>
+      <view class="body_hot_center">
+        <view class="hot_index hot_1">
+            <image src="../../image/img/K12_r2_c2.jpg"></image>
+            <view>
+              <view class="ell">K12定制书包</view>
+              <view class="ell">￥260.00</view>
+            </view>
+        </view>
+        <view class="hot_index hot_2">
+            <image src="../../image/img/K12_r2_c2.jpg"></image>
+            <view>
+              <view class="ell">K12定制书包</view>
+              <view class="ell">￥260.00</view>
+            </view>
+        </view>
+         <view class="hot_index hot_3">
+            <image src="../../image/img/K12_r2_c2.jpg"></image>
+            <view>
+              <view class="ell">K12定制书包</view>
+              <view class="ell">￥260.00</view>
+            </view>
+        </view>
+      </view>
+      <image class="vipSopping" src="../../image/vip.jpg"></image>
+   </view>
+   <view class="body_hot2">
+    <view>
+      <image src="../../image/title1.jpg"></image>
+      <image src="../../image/title1_1.jpg" bindtap="more"></image>
+    </view>
+    <view class="body_hot2_center">
+      <view>
+        <image src="../../image/img/2_c2.jpg"></image>
+        <view>K12定制书包</view>
+        <view class="money"><view>￥260</view><view>￥320</view></view>
+      </view>
+       <view>
+        <image src="../../image/img/2_c2.jpg"></image>
+        <view>K12定制书包</view>
+        <view class="money"><view>￥260</view><view>￥320</view></view>
+      </view>
+       <view>
+        <image src="../../image/img/2_c2.jpg"></image>
+        <view>K12定制书包</view>
+        <view class="money"><view>￥260</view><view>￥320</view></view>
+      </view>
+       <view>
+        <image src="../../image/img/2_c2.jpg"></image>
+        <view>K12定制书包</view>
+        <view class="money"><view>￥260</view><view>￥320</view></view>
+      </view>
+    </view>
+   </view>
+      <view class="body_hot2 body_hot">
+    <view>
+      <image src="../../image/title2.jpg"></image>
+      <image src="../../image/title1_1.jpg" bindtap="more"></image>
+    </view>
+    <view class="body_hot2_center">
+      <view>
+        <image src="../../image/img/2_c2.jpg"></image>
+        <view>K12定制书包</view>
+        <view class="money"><view>￥260</view><view>￥320</view></view>
+      </view>
+       <view>
+        <image src="../../image/img/2_c2.jpg"></image>
+        <view>K12定制书包</view>
+        <view class="money"><view>￥260</view><view>￥320</view></view>
+      </view>
+       <view>
+        <image src="../../image/img/2_c2.jpg"></image>
+        <view>K12定制书包</view>
+        <view class="money"><view>￥260</view><view>￥320</view></view>
+      </view>
+       <view>
+        <image src="../../image/img/2_c2.jpg"></image>
+        <view>K12定制书包</view>
+        <view class="money"><view>￥260</view><view>￥320</view></view>
+      </view>
+    </view>
+   </view>
+</view>

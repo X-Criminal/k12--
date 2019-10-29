@@ -1,0 +1,222 @@
+/* pages/class/class.wxss */
+page{
+  padding-bottom: 48px;
+  height:calc(100% - 30rpx);
+  box-sizing:border-box;
+}
+.query{
+  width: 100%;
+}
+.query .input{
+  width: 690rpx;
+  height: 75rpx;
+  background-color: #F8F8F8;
+  display: block;
+  margin: 30rpx auto;
+  font-size: 24rpx;
+  border-radius: 30rpx;
+  text-align: center;
+  line-height: 75rpx;
+  color: #9A9A9A;
+}
+.input image{
+  width: 23rpx;
+  height: 25rpx;
+  vertical-align: middle;
+}
+.classNav{
+  float: left;
+  width: 200rpx;
+  height:calc(100% - 105rpx);
+  background-color: #F8F8F8;
+}
+.classBody{
+  float: left;
+  width: 490rpx;
+  height:calc(100% - 105rpx);
+  margin-left: 30rpx;
+}
+.classNav .classNavs{
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+.show{
+  background-color: white;
+}
+.show view{
+  display: inline-block;
+  height: 40rpx;
+  line-height: 40rpx;
+  width: 100%;
+  border-left: 6rpx solid #2087FE;
+  color: #2087FE;
+}
+.classBody .classBody_title{
+  width: 490rpx;
+  height: 190rpx;
+  border-radius: 30rpx;
+}
+.classBody .classBody_data{
+  width: 490rpx;
+  margin-top: 30rpx;
+}
+.classBody_data .Datas{
+  width: 230rpx;
+  height: 340rpx;
+  float: left;
+}
+.classBody_data .Datas:nth-child(2n){
+  margin-left: 28rpx;
+}
+.classBody_data .Datas image{
+  width: 230rpx;
+  height: 230rpx;
+  border-radius: 30rpx;
+}
+.classBody_data .Datas view{
+  font-size: 23rpx;
+  color: #333;
+  line-height: 40rpx;
+}
+.classBody_data .Datas view:nth-of-type(2) view{
+  color: #FF4848;
+  display: inline-block;
+  vertical-align: middle;
+}
+.classBody_data .Datas view:nth-of-type(2) image{
+  width: 40rpx;
+  height: 40rpx;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15rpx;
+}
+.add{
+  position: fixed;
+  width: 40rpx;
+  height: 40rpx;
+  background-color:rgb(36,135,255);
+  border-radius: 100%;
+  /* animation: down .5s linear;
+  animation-fill-mode: forwards ; */
+  text-align: center;
+  line-height: 40rpx;
+  color: white;
+  font-size: 18rpx;
+}
+.cover-view{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .5);
+}
+.cover-view .box{
+  width: 100%;
+  height:610rpx;
+  background-color: white;
+  position: absolute;
+  bottom: 48px;
+  border-radius: 25rpx 25rpx 0 0;
+}
+.detail{
+  height: 45%;
+  padding: 30rpx;
+  padding-bottom: 0;
+}
+.detail cover-image{
+  width: 230rpx;
+  height: 230rpx;
+  float: left;
+}
+.detail .soppingDetaLis{
+  width:calc(100% - 260rpx);
+  float: right;
+}
+.soppingDetaLis{
+  font-size: 30rpx;
+  font-family: "PingFangs";
+}
+.soppingDetaLis cover-view:nth-child(1){
+  width: 100%;
+  white-space:normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 45rpx;
+}
+.soppingDetaLis cover-view:nth-child(2){
+  font-size: 24rpx;
+  color: #999;
+  line-height: 60rpx;
+}
+.soppingDetaLis cover-view:nth-child(3){
+  color: #FF706F;
+  font-size: 24rpx;
+}
+
+.detail2{
+  height: 30%;
+  padding:0 30rpx;
+}
+.detail2 .number{
+  font-size: 30rpx;
+  color: #333333;
+  font-weight: 600;
+  width: 100%;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.detail2 .number{
+  margin-bottom: 30rpx;
+}
+.detail2 cover-view{
+  height: 100%;
+  float: left;
+}
+.detail2 cover-view:nth-child(2) cover-view:nth-child(1),.detail2 cover-view:nth-child(2) cover-view:nth-child(3),.detail2 cover-view:nth-child(2) cover-view:nth-child(2){
+  width: 60rpx;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  background-color: #F3F3F3;
+  font-size:40rpx;
+  color: #888;
+}
+.detail2 cover-view:nth-child(2) cover-view:nth-child(2){
+  width: 263rpx;
+  margin: 0 20rpx;
+  font-size: 30rpx;
+}
+.detail2 cover-view:nth-child(2) cover-view:nth-child(4){
+  line-height: 60rpx;
+  color: #999999;
+  font-size: 24rpx;
+  margin-left: 30rpx;
+}
+.detail3{
+  position: relative;
+  height: 125rpx;
+}
+.detail3 button{
+  position: absolute;
+  height: 125rpx;
+  float: left;
+  width: 50%;
+  top: 0;
+  line-height: 125rpx;
+  color: white;
+  font-size: 32rpx;
+}
+.detail3 button::after{
+  border: none;
+}
+.detail3 button:nth-child(1){
+  left: 0;
+  background-color: #FF4948;
+}
+.detail3 button:nth-child(2){
+  right: 0;
+  background-color: #2486FF;
+}

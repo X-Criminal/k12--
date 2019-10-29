@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/GoodsDetaLis/GoodsDetaLis",
+    "pages/index/index",
+    "pages/more/more",
+    "pages/search/search",
+    "pages/class/class",
+    "pages/sopping/sopping"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2487FF",
+    "navigationBarTitleText": "K12商城",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/image/home.jpg",
+        "selectedIconPath": "image/home1.jpg",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/class/class",
+        "iconPath": "image/class.jpg",
+        "selectedIconPath": "image/class2.jpg",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/sopping/sopping",
+        "iconPath": "image/sopping.jpg",
+        "selectedIconPath": "image/sopping.jpg",
+        "text": "购物车"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

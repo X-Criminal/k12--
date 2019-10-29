@@ -1,0 +1,51 @@
+<!--pages/GoodsDetaLis/GoodsDetaLis.wxml-->
+<scroll-view scroll-y>
+  <view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper 
+        circular="{{true}}"
+        autoplay="{{true}}"
+        bindchange="SwiperChange"
+        >
+        <block wx:for="{{background}}" wx:key="index">
+          <swiper-item>
+            <image class="swiper-item" src="{{item.image}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <cover-view class="page">
+      {{current}}/{{background.length}}
+      </cover-view>
+  </view>
+  <view class="title">
+    <view>零百K12教育，学员奖励</view>
+    <image src="../../image/share.jpg"></image>
+  </view>
+  <view class="price">
+    <view>￥998.00</view>
+    <view>快递 免运费</view>
+  </view>
+  <view class="appraice">
+    <view class="appraice_title">
+        宝贝评价（2）
+       <view>满意度 <text style="color:#FF4949;">98%</text> ▶</view>
+    </view>
+    <view class="userAppraice">
+      <view class="Lis">
+        <view>
+          <image src="http://k12education.com.cn/Web/images/logo.png" class="userImage"></image>
+          <view class="userName">小明</view>
+          <image src="../../image/isVip.jpg" class="isVip"></image>
+          <view>
+            <text>★</text>
+            <text>★</text>
+            <text>★</text>
+            <text>★</text>
+            <text>★</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

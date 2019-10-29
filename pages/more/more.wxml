@@ -1,0 +1,92 @@
+<!--pages/more/more.wxml-->
+<view>
+   <input focus="true" placeholder="英语闪卡/英语教程/英语环创" bindconfirm="getDoods" class="input" confirm-type="search"></input>
+</view>
+<view class="type">
+  <view bindtap="getCheck">综合 <view style="transform:rotate({{isBox?0:180}}deg);">▼</view> </view>
+  <view>销售</view>
+  <view bindtap="sort" class="sort"> 
+    <view class="mo">价格</view>
+    <view class="UpAndDown">
+      <view style="{{_sort==2?'color:#ccc;':''}}">▼</view>
+      <view style="{{_sort==3?'color:#ccc;':''}}">▼</view>
+     </view>
+  </view>
+  <view class='b' bindtap="getClass">
+    筛选
+    <image class="icon" src="../../image/b.jpg"></image>
+  </view> 
+</view>
+<scroll-view scroll-y class="center">
+  <view class="lis">
+    <image src="../../image/img/2_c2.jpg"></image>
+    <view>K12定制书包</view>
+    <view class="money"><view>￥260</view><view>￥320</view></view>
+  </view>
+  <view class="lis">
+    <image src="../../image/img/2_c2.jpg"></image>
+    <view>K12定制书包</view>
+    <view class="money"><view>￥260</view><view>￥320</view></view>
+  </view>
+  <view class="lis">
+    <image src="../../image/img/2_c2.jpg"></image>
+    <view>K12定制书包</view>
+    <view class="money"><view>￥260</view><view>￥320</view></view>
+  </view>
+  <view class="lis">
+    <image src="../../image/img/2_c2.jpg"></image>
+    <view>K12定制书包</view>
+    <view class="money"><view>￥260</view><view>￥320</view></view>
+  </view>
+    <view class="lis">
+    <image src="../../image/img/2_c2.jpg"></image>
+    <view>K12定制书包</view>
+    <view class="money"><view>￥260</view><view>￥320</view></view>
+  </view>
+    <view class="lis">
+    <image src="../../image/img/2_c2.jpg"></image>
+    <view>K12定制书包</view>
+    <view class="money"><view>￥260</view><view>￥320</view></view>
+  </view>
+    <view class="lis">
+    <image src="../../image/img/2_c2.jpg"></image>
+    <view>K12定制书包</view>
+    <view class="money"><view>￥260</view><view>￥320</view></view>
+  </view>
+</scroll-view>
+<view class="box" wx:if="{{isBox}}" bindtap="deleBox">
+  <view class="box1">
+    <view catchtap="z">综合</view>
+    <view catchtap="p">评论高到低</view>
+  </view>
+</view>
+<view class="ClassBox {{isBox2?'show':''}}" wx:if="{{isBox2}}" bindtap="deleBox2"></view>
+<view class="_class   {{isBox2?'show':''}}"  wx:if="{{isBox2}}">
+    <view class="check1">
+      <view  bindtap="tap1" class="{{tap1Idx==1?'tapp':''}}" data-idx="1" data-id="998">创意</view>
+      <view  bindtap="tap1" class="{{tap1Idx==2?'tapp':''}}" data-idx="2" data-id="12" >可爱</view>
+      <view  bindtap="tap1" class="{{tap1Idx==3?'tapp':''}}" data-idx="3" data-id="25" >卡通</view>
+      <view  bindtap="tap1" class="{{tap1Idx==4?'tapp':''}}" data-idx="4" data-id="874" >认知</view>
+    </view>
+    <view class="title">
+      分类
+    </view>
+    <view class="check2">
+      <view bindtap="tap2" class="{{tap2Idx==1?'tapp':''}}" data-idx="1" data-id="78">创意</view>
+      <view bindtap="tap2" class="{{tap2Idx==2?'tapp':''}}" data-idx="2" data-id="43">可爱</view>
+      <view bindtap="tap2" class="{{tap2Idx==3?'tapp':''}}" data-idx="3" data-id="32">卡通</view>
+      <view bindtap="tap2" class="{{tap2Idx==4?'tapp':''}}" data-idx="4" data-id="12">认知</view>
+    </view>
+    <view class="title">
+      价格
+    </view>
+    <view class="slider">
+        <input type="number" value="{{number1}}" bindinput="getInput" data-name="number1" placeholder="最低价格"></input>
+        <view>~</view>
+        <input type="number" value="{{number2}}" bindinput="getInput" data-name="number2" placeholder="最高价格"></input>
+    </view>
+    <view class="bottom">
+      <view bindtap="reset"> 重置 </view>
+      <view> 确定 </view>
+    </view>
+</view>

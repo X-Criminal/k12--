@@ -1,0 +1,16 @@
+<!--pages/search/search.wxml-->
+<view class="query">
+ <input focus="true" placeholder="英语闪卡/英语教程/英语环创" bindconfirm="getDoods" class="input" confirm-type="search"></input>
+ <view class="search" bindtap="_return">取消</view>
+</view>
+<view class="History">
+  <view>热门搜索 <image class="icon" src="../../image/ref.jpg"></image> </view>
+  <view class="History_center">
+    <view>搜索1</view>
+    <view>搜索2</view>
+    <view>搜索3</view>
+    <view>搜索4</view>
+    <view>搜索5</view>
+    <view>搜索6</view> 
+  </view>
+</view>

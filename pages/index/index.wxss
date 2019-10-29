@@ -1,0 +1,244 @@
+/**index.wxss**/
+page{
+  padding-bottom: 48px;
+}
+.back{
+  position: absolute;
+  width: 100%;
+}
+.d1{
+   width: 100%;
+   height: 300rpx;
+   background-image: url("https://kb.k12education.com.cn/uploadfile/head.png");
+   background-repeat:no-repeat; 
+   background-size:100% 100%;
+   -moz-background-size:100% 100%;
+}
+.container {background-color: #fff;}
+view.section {
+    display: block;
+    width: 100%;
+    top:10rpx;
+    left:0px;
+}
+.swiper_box{
+  /*width: 100%;*/
+  height: 370rpx;
+}
+swiper.swiper {
+  height: 100%;
+}
+.swiper-item {
+    display: block;
+    height: 100%;
+}
+.swiper{
+  height: 330rpx;
+  width: 100%;
+}
+.swiper swiper-item{
+  width: 690rpx !important;
+  display: inline-block;
+  margin: 0 30rpx;
+  border-radius: 30rpx;
+}
+.swiper image{
+  width:100%;
+  height:100%;
+  border-radius: 30rpx;
+  transition: all .5s;
+}
+.swiper .none{
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.swiper .none image{
+  width:  calc(100% - 30rpx);
+  height: calc(100% - 30rpx);
+  margin: 15rpx 15rpx;
+}
+.swiper .show image{
+  width:  100%;
+  height: 100%;
+  margin: 0;
+}
+.className{
+  width: 690rpx;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  padding-bottom: 20rpx;
+}
+.className>view{
+  width: 25%;
+  display: inline-block;
+  text-align: center;
+}
+.className>view:nth-child(n + 4){
+  margin-top: 20rpx;
+}
+.className>view image{
+  width: 100rpx;
+  height: 100rpx;
+  display: inline-block;
+}
+.className>view view{
+  font-size: 24rpx;
+  text-align: center;
+}
+.hot{
+    border-top: 1px solid #e4e4e4;
+}
+.title{
+  height: 100rpx;
+  line-height: 100rpx;
+  display: inline-block;
+  width: 175rpx;
+}
+.title text{
+  font-size: 28rpx;
+  font-weight: 600;
+  font-style: oblique;
+}
+.title text:nth-child(1){
+  margin-left: 30rpx;
+}
+.title text:nth-child(2){
+  color: #FF4846;
+  border-right: 2px solid #e4e4e4;
+  padding-right: 20rpx;
+}
+.HotCenter{
+  height: 100rpx;
+  line-height: 100rpx;
+  width: calc(100% - 175rpx);
+  display: inline-block;
+  position: relative;
+}
+.HotCenter image{
+  height: 18rpx;
+  width: 11rpx;
+  position: absolute;
+  right: 30rpx;
+  top: calc(50% - 9rpx);
+}
+.body{
+  background-color: #EBF3FE;
+  padding-top: 20rpx;
+}
+.body .body_hot{
+  background-color: white;
+}
+.body .body_hot .body_hot_title{
+  width: 690rpx;
+  margin: 0 auto;
+  height: 67rpx;
+  line-height: 67rpx;
+}
+.body .body_hot .body_hot_title>image{
+  width: 192rpx;
+  height: 42rpx;
+  vertical-align: middle;
+  /* float: left; */
+}
+.body .body_hot .body_hot_title>view{
+  vertical-align: middle;
+  float: right;
+}
+.body .body_hot .body_hot_title>view image{
+  width: 28rpx;
+  height:28rpx;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15rpx;
+}
+.body_hot_title > view image{
+  display: inline-block;
+  vertical-align: middle;
+}
+.body_hot_title >view view{
+  display: inline-block;
+  vertical-align: middle;
+}
+.body_hot_center{
+  width: 690rpx;
+  margin: 0 auto;
+  margin-top: 15rpx;
+}
+.body_hot_center .hot_index{
+  width: 210rpx;
+  font-size: 22rpx;
+  display: inline-block;
+}
+.body_hot_center .hot_2{
+  margin: 0 30rpx;
+}
+.body_hot_center .hot_index image{
+  width: 210rpx;
+  height: 210rpx;
+  border-radius: 25rpx;
+}
+.body_hot_center .hot_index>view view{
+  line-height: 35rpx;
+  width: 100%;
+  
+}
+.body_hot_center .hot_index>view view:nth-child(1){
+  color: #333333;
+}
+.body_hot_center .hot_index>view view:nth-child(2){
+  color:#FF4D50;
+}
+.body_hot >image{
+  width: 100%;
+  height: 186rpx;
+}
+.body_hot2{
+  background-color: white;
+  margin-top: 20rpx;
+}
+.body_hot2>view:nth-child(1){
+  width: 690rpx;
+  margin: 0 auto;
+  padding: 25rpx 0;
+}
+.body_hot2>view:nth-child(1) image:nth-child(1){
+  width: 198rpx;
+  height: 40rpx;
+}
+.body_hot2>view:nth-child(1) image:nth-child(2){
+  width: 140rpx;
+  height: 40rpx;
+  float: right;
+}
+.body_hot2_center{
+  width: 690rpx;
+  margin: 0 auto;
+}
+.body_hot2_center>view{
+  width: 330rpx;
+  display: inline-block;
+}
+.body_hot2_center>view:nth-child(even){
+  margin-left: 25rpx;
+}
+.body_hot2_center>view:nth-child(n+3){
+  margin-top: 30rpx;
+}
+.body_hot2_center>view image{
+  width: 330rpx;
+  height: 270rpx;
+}
+.body_hot2_center>view view{
+  font-size: 23rpx;
+}
+.body_hot2_center .money >view{
+  display: inline-flex;
+}
+.body_hot2_center .money >view:nth-child(1){
+  font-size: 26rpx;
+  color: #FE504F;
+}
+.body_hot2_center .money >view:nth-child(2){
+  color: #BBBBBB;
+  text-decoration:line-through;
+}

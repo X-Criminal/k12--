@@ -1,0 +1,11 @@
+/**app.wxss**/
+view{
+  color: #333333;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.ell{
+  display:block;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}

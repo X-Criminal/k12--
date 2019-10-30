@@ -1,0 +1,97 @@
+<!--pages/hanbi/hanbi.wxml-->
+<view class="hanbi">
+  <!-- <image src="../../image/hanbiyige.jpg" bindtap="snmd"></image> -->
+  <view>
+    <view>收货人：小明</view>
+    <view>12345678910</view>
+  </view>
+  <view>
+    收货地址：小明小明小明小明小明小明小明
+  </view>
+</view>
+<view class="hanbi2">
+  <image src="../../image/hanbiyige.jpg"></image>
+  <view>
+    <view>aaaaaaaaaaaaa</view>
+    <view>bbbbbbbb</view>
+    <view>cccccc</view>
+  </view>
+  <view class="number">
+    x1
+  </view>
+</view>
+<view class="hanbi3">
+  <view>费用合计</view>
+  <view>￥25</view>
+</view>
+<view class="hanbi3">
+  <view>运费</view>
+  <view>免运费</view>
+</view>
+<view class="hanbi4"></view>
+<view class="hanbi5">
+  <view>
+    卖家留言
+  </view>
+  <input placeholder="选填，留言建议提前协商（50字以内）"></input>
+</view>
+<view class="grd">
+  <image src="../../image/grd.jpg"></image>
+  <view>
+    <view>
+      ￥25
+    </view>
+    <view>
+      (含运费)
+    </view>
+  </view>
+  <view class="aaaaaaa" bindtap="xiaowbd"></view>
+</view>
+
+
+
+<view class="shouhanbi" wx:if="{{shouhanbi}}">
+   <view class='sbcl' bindtap="xiaohong">
+    <view class="s1"> 
+      <view>零百</view>
+      <view>电话号码</view>
+    </view>
+    <view class="s2">
+      广东省深圳市zz一区
+    </view>
+    <view class="s3">
+      <view bindtap="hehe" class="{{issssss?'xiaoming':''}}">
+        √
+      </view>
+      <view>
+        设为默认地址
+      </view>
+      <view catchtap="xiaozi">编辑</view>
+      <view>删除</view>
+    </view>
+   </view>
+</view>
+
+<view class="shouhanbi2" wx:if="{{shouhanbi2}}">
+  <view class="box">
+     <view class="xiaodd">
+        <view>收货人</view>
+        <input placeholder="名字"></input>
+     </view>
+     <view class="xiaodd">
+      <view>手机号码</view>
+        <input placeholder="请输入11位手机号"></input>
+      </view>
+      <view class="xiaodd">
+        <view>收货城市</view>
+        <input placeholder="请输入地址"></input>
+      </view>
+      <view class="xiaodd">
+        <view>详细地址</view>
+        <input  placeholder="请输入街道门牌信息"></input>
+      </view>
+  </view>
+  <view class="aaaddd" bindtap="hehe">
+    保存
+  </view>
+</view>

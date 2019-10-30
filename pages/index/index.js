@@ -26,6 +26,14 @@ Component({
      wx.navigateTo({
        url: '../more/more',
      })
+    },
+    _NAV(){
+      wx.navigateTo({
+        url: '../GoodsDetaLis/GoodsDetaLis',
+        fail(e){
+          console.log(e)
+        }
+      })
     }
   },
   pageLifetimes: {

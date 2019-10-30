@@ -88,3 +88,104 @@ page > scroll-view{
   float: right;
   font-size: 23rpx;
 }
+.userAppraice .Lis .userImage,.userAppraice .Lis .userName,.userAppraice .Lis .isVip ,.userAppraice .Lis .level{
+  display: inline-block;
+  vertical-align: middle;
+}
+.userAppraice .Lis .userImage{
+  width: 46rpx;
+  height: 46rpx;
+}
+.userAppraice .Lis .userName{
+  font-size: 24rpx;
+  color: #2785FF;
+  margin-right: 8rpx;
+}
+.userAppraice .Lis .isVip{
+  width: 67rpx;
+  height: 42rpx;
+  margin-top: -15rpx;
+}
+.userAppraice .Lis .level{
+  float: right;
+}
+.userAppraice .Lis>view:nth-child(1){
+  margin-top: 8rpx;
+  width: 690rpx;
+  margin: 0 auto;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+.userAppraice .Lis .userAppraice_body{
+  width: 690rpx;
+  margin: 0 auto;
+  color: #323232;
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}
+.userAppraice .Lis .time{
+  width: 690rpx;
+  margin: 0 auto;
+  color: #9A9A9A;
+  font-size: 20rpx;
+  margin-top: 10rpx;
+}
+.appraice .all{
+  width: 220rpx;
+  height: 60rpx;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 60rpx;
+  border: 1px solid #FF4848;
+  color: #FF4848;
+  border-radius: 100rpx;
+  padding: 20rpx;
+}
+.goodsLis image{
+  width: 100%;
+}
+.image1{
+  width: 690rpx;
+  height: 338rpx;
+  margin: 0 auto;
+  display: block;
+  margin-top: 40rpx;
+}
+.nav{
+  width: 100%;
+  height: 110rpx;
+  position: relative;
+}
+.nav image{
+  width: 100%;
+  height: 100%;
+}
+.nav view{
+  position: absolute;
+  top: 0;
+}
+.nav view:nth-of-type(1){
+  width: 108rpx;
+  height: 108rpx;
+  left: 0;
+}
+.nav view:nth-of-type(2){
+  width: 108rpx;
+  height: 108rpx;
+  left: 108rpx;
+}
+.nav view:nth-of-type(3){
+  width: 108rpx;
+  height: 108rpx;
+  left: 216rpx;
+}
+.nav view:nth-of-type(4){
+  width: 203rpx;
+  height: 108rpx;
+  right: 203rpx;
+}
+.nav view:nth-of-type(5){
+  width: 203rpx;
+  height: 108rpx;
+  right: 0;
+}

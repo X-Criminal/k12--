@@ -32,12 +32,12 @@
        <view>满意度 <text style="color:#FF4949;">98%</text> ▶</view>
     </view>
     <view class="userAppraice">
-      <view class="Lis">
+      <view class="Lis" >
         <view>
           <image src="http://k12education.com.cn/Web/images/logo.png" class="userImage"></image>
           <view class="userName">小明</view>
           <image src="../../image/isVip.jpg" class="isVip"></image>
-          <view>
+          <view class="level">
             <text>★</text>
             <text>★</text>
             <text>★</text>
@@ -45,7 +45,46 @@
             <text>★</text>
           </view>
         </view>
+        <view class="userAppraice_body">
+          买了两次，感觉好用买了两次，感觉好用买了两次，感觉好用买了两次，感觉好用买了两次，感觉好用买了两次，感觉好用
+        </view>
+        <view class="time">
+          10-22 18:19
+        </view>
+      </view>
+      <view class="Lis" >
+        <view>
+          <image src="http://k12education.com.cn/Web/images/logo.png" class="userImage"></image>
+          <view class="userName">小明</view>
+          <image src="../../image/isVip.jpg" class="isVip"></image>
+          <view class="level">
+            <text>★</text>
+            <text>★</text>
+            <text>★</text>
+            <text>★</text>
+            <text>★</text>
+          </view>
+        </view>
+        <view class="userAppraice_body">
+          买了两次，感觉好用买了两次，感觉好用买了两次，感觉好用买了两次，感觉好用买了两次，感觉好用买了两次，感觉好用
+        </view>
+        <view class="time">
+          10-22 18:19
+        </view>
       </view>
     </view>
+    <view class="all">查看全部评论</view>
+  </view>
+  <view class="goodsLis">
+    <image class="image1" src="../../image/bbb.jpg" style="width:690rpx;height:338rpx:"></image>
+    <image src="http://k12education.com.cn/Web/images/logo.png"></image>
   </view>
 </scroll-view>
+<view class="nav">
+  <image src="../../image/nav.gif"></image>
+  <view bindtap="xiaoming1"></view>
+  <view bindtap="xiaoming2"></view>
+  <view bindtap="xiaoming3"></view>
+  <view bindtap="xiaoming4"></view>
+  <view bindtap="xiaoming5"></view>
+</view>

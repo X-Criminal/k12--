@@ -1,11 +1,13 @@
 {
   "pages": [
-    "pages/GoodsDetaLis/GoodsDetaLis",
+    "pages/hanbi/hanbi",
     "pages/index/index",
+    "pages/GoodsDetaLis/GoodsDetaLis",
     "pages/more/more",
     "pages/search/search",
     "pages/class/class",
     "pages/sopping/sopping"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",

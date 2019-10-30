@@ -104,22 +104,22 @@
       <image src="../../image/title1_1.jpg" bindtap="more"></image>
     </view>
     <view class="body_hot2_center">
-      <view>
+      <view bindtap="_NAV">
         <image src="../../image/img/2_c2.jpg"></image>
         <view>K12定制书包</view>
         <view class="money"><view>￥260</view><view>￥320</view></view>
       </view>
-       <view>
+       <view bindtap="_NAV">
         <image src="../../image/img/2_c2.jpg"></image>
         <view>K12定制书包</view>
         <view class="money"><view>￥260</view><view>￥320</view></view>
       </view>
-       <view>
+       <view bindtap="_NAV">
         <image src="../../image/img/2_c2.jpg"></image>
         <view>K12定制书包</view>
         <view class="money"><view>￥260</view><view>￥320</view></view>
       </view>
-       <view>
+       <view bindtap="_NAV">
         <image src="../../image/img/2_c2.jpg"></image>
         <view>K12定制书包</view>
         <view class="money"><view>￥260</view><view>￥320</view></view>
